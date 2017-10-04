@@ -1,19 +1,148 @@
 body {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: Helvetica;
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+  text-align: center;
 }
 
-
-h1 {
-  color: SeaGreen;
+.flex-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  height: 69px;
+  background-color: black;
+  border-bottom: 1px solid seashell;
+  align-items: center;
+}
 
-p,
+header img {
+  height: 50px;
+  padding-left: 10px;
+}
+
+nav {
+  text-align: right;
+  flex-grow: 1;
+}
+
+nav ul {
+  display: inline-block;
+  padding: 20px 10px;
+}
+
+ul {
+  text-align: right;
+}
+
 li {
-  font-size: 18px;
+  list-style-type: none;
+  display: inline-block;
+  margin: 5px;
 }
-
 
 a {
-  text-decoration: none;
+  text-decoration: underline;
+  color: inherit;
+}
+
+p {
+  display: block;
+}
+
+.banner {
+  display: flex;
+  padding-top: 70px;
+  justify-content: center;
+}
+
+#mission {
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg);
+  height: 700px;
+  width: 1200px;
+}
+
+.statment {
+  background-color: black;
+  margin-top: 300px;
+  text-align: center;
+}
+
+h2 {
+  padding-top: 5px;
+  display: block;
+  text-align: center;
+}
+
+h4 {
+  padding-bottom: 5px;
+}
+
+div {
+  display: block;
+}
+
+#store {
+  display: block;
+  width: 1000px;
+  margin: auto;
+}
+
+#tea {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#tea img {
+  height: 200px;
+  width: 300px;
+  display: block;
+  margin: 10px;
+}
+
+#tea span {
+  margin-top: 10px;
+  display: block;
+  text-align: center;
+  font-weight: bold;
+}
+
+.item {
+  padding: 5px;
+}
+
+#locations {
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg);
+  height: 500px;
+  width: 1200px;
+  padding-top: 50px;
+  margin: 50px auto;
+  display: block;
+}
+
+.location {
+  height: auto;
+  width: 300px;
+  background-color: black;
+  opacity: 1;
+  display: inline-block;
+  margin: 5px 20px;
+  padding: 10px;
+}
+
+.contact {
+  height: 200px;
+  width: auto;
+}
+
+footer {
+  text-align: left;
 }
